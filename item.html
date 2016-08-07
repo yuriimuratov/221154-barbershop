@@ -6,57 +6,73 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
-      <div class="container">
-        <a href="index.html" class="main-header-logo"><img src="img/logo.png" alt="Барбершоп «Бородинский»" width="111" height="24"></a>
-
+      <div class="container clearfix">
         <nav class="main-navigation">
+          <a class="logo-inner" href="index.html">
+            <img src="img/inner-logo.png" width="111" height="24" alt="Барбершоп «Бородинский»">
+          </a>
+
           <ul>
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="pricelist.html">Прайс-лист</a></li>
-            <li class="active">Магазин</li>
-            <li><a href="#">Контакты</a></li>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="pricelist.html">Прайс-лист</a>
+            </li>
+            <li class="active">
+              <span>Магазин</span>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
           </ul>
         </nav>
 
         <div class="user-block">
-          <a href="#" class="login">Вход</a>
+          <a class="login" href="#">Вход</a>
         </div>
       </div>
     </header>
 
     <main class="item">
-      <div class="container">
-        <h1 class="page-title">Набор для путешествий «BAXTER OF CALIFORNIA»</h1>
+      <div class="container clearfix">
+        <h1 class="inner-page-title">Набор для путешествий «BAXTER OF CALIFORNIA»</h1>
 
-        <nav class="breadcrumbs">
-          <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Магазин</a></li>
-            <li><a href="#">Средства для ухода</a></li>
-            <li class="active">Набор для путешествий «BAXTER OF CALIFORNIA»</li>
-          </ul>
-        </nav>
+        <ul class="breadcrumbs">
+          <li>
+            <a href="#">Главная</a>
+          </li>
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Средства для ухода</a>
+          </li>
+          <li class="current">
+            <span>Набор для путешествий «BAXTER OF CALIFORNIA»</span>
+          </li>
+        </ul>
 
         <div class="item-content-left">
-          <section class="item-image">
-            <figure>
+          <section class="item-images">
+            <figure class="item-image-big">
               <img src="img/item/item-1-large.jpg" width="460" height="498" alt="Набор для путешествий «BAXTER OF CALIFORNIA»">
             </figure>
-          </section>
 
-          <section class="item-preview_images">
-            <figure>
+            <figure class="item-image-small">
               <img src="img/item/item-1-preview-1.jpg" width="140" height="149" alt="Набор для путешествий «BAXTER OF CALIFORNIA»">
             </figure>
 
-            <figure>
+            <figure class="item-image-small">
               <img src="img/item/item-1-preview-2.jpg" width="140" height="149" alt="Набор для путешествий «BAXTER OF CALIFORNIA»">
             </figure>
 
-            <figure>
+            <figure class="item-image-small">
               <img src="img/item/item-1-preview-3.jpg" width="140" height="149" alt="Набор для путешествий «BAXTER OF CALIFORNIA»">
             </figure>
           </section>
@@ -64,20 +80,20 @@
 
         <div class="item-content-right">
           <section class="item-info">
-            <div class="info_block">
-              <p class="is_available">Есть в наличии</p>
-              <p class="vendor_code">DEXTER-AE</p>
-            </div>
-
-            <p class="description">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-
-            <div class="price_block">
-              <p class="price">2900 РУБ</p>
-              <a href="#" class="btn btn-buy">Купить</a>
-            </div>
+            <span class="availability">Есть в наличии</span>
+            <span class="vendorcode">DEXTER-AE</span>
+          </section>
+          
+          <section class="item-description">
+            <p>Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
           </section>
 
-          <section class="item-info_additional">
+          <section class="item-price">
+            <span class="price">2900 РУБ</p>
+            <a href="#" class="btn btn-buy">Купить</a>
+          </section>
+
+          <section class="item-additional-info">
             <h2>В набор входят:</h2>
             <ul>
               <li>Средство для умывания (50 мл)</li>
